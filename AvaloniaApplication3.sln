@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaApplication3", "AvaloniaApplication3\AvaloniaApplication3.csproj", "{EDDB3DA0-1F10-4515-ABD2-55D8D1FC0568}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{94F7168C-D13C-437D-93F1-0C36A93DD7E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModel", "ViewModel\ViewModel.csproj", "{4298478B-DF6F-4659-9708-351C98C59F22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDDB3DA0-1F10-4515-ABD2-55D8D1FC0568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDDB3DA0-1F10-4515-ABD2-55D8D1FC0568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDDB3DA0-1F10-4515-ABD2-55D8D1FC0568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDDB3DA0-1F10-4515-ABD2-55D8D1FC0568}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94F7168C-D13C-437D-93F1-0C36A93DD7E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94F7168C-D13C-437D-93F1-0C36A93DD7E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94F7168C-D13C-437D-93F1-0C36A93DD7E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94F7168C-D13C-437D-93F1-0C36A93DD7E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4298478B-DF6F-4659-9708-351C98C59F22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4298478B-DF6F-4659-9708-351C98C59F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4298478B-DF6F-4659-9708-351C98C59F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4298478B-DF6F-4659-9708-351C98C59F22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
