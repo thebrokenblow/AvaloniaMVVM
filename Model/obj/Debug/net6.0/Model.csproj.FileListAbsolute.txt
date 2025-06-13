@@ -9,3 +9,4 @@ C:\Users\Artem\Desktop\AvaloniaApplication3\Model\obj\Debug\net6.0\Model.dll
 C:\Users\Artem\Desktop\AvaloniaApplication3\Model\obj\Debug\net6.0\refint\Model.dll
 C:\Users\Artem\Desktop\AvaloniaApplication3\Model\obj\Debug\net6.0\Model.pdb
 C:\Users\Artem\Desktop\AvaloniaApplication3\Model\obj\Debug\net6.0\ref\Model.dll
+C:\Users\Artem\Desktop\AvaloniaApplication3\Model\obj\Debug\net6.0\Model.sourcelink.json

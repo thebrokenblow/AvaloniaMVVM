@@ -6,50 +6,66 @@ namespace ViewModel;
 
 public class MainWindowViewModel : INotifyPropertyChanged
 {
-    private double _number1;
-    private double _number2;
-    private double _result;
-    private readonly Calculator _calculator = new();
+    private readonly MovieService _movieService;
+    private IEnumerable<Movie> _movies;
+    private int _currentPage = 1;
+    private const int PageSize = 10;
+    private int _totalPages;
 
-    public double Number1
+    public MainWindowViewModel()
     {
-        get => _number1;
-        set
-        {
-            _number1 = value;
-            OnPropertyChanged();
-        }
+        _movieService = new MovieService();
+        LoadMovies();
     }
 
-    public double Number2
+    public IEnumerable<Movie> Movies
     {
-        get => _number2;
-        set
-        {
-            _number2 = value;
-            OnPropertyChanged();
-        }
-    }
-
-    public double Result
-    {
-        get => _result;
+        get => _movies;
         private set
         {
-            _result = value;
+            _movies = value;
             OnPropertyChanged();
         }
     }
 
-    public void Calculate()
-    {
-        Result = _calculator.Add(Number1, Number2);
-    }
 
     public event PropertyChangedEventHandler? PropertyChanged;
 
     protected virtual void OnPropertyChanged([CallerMemberName] string? propertyName = null)
     {
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
+
+    public int CurrentPage
+    {
+        get => _currentPage;
+        set
+        {
+            if (value < 1 || value > _totalPages) return;
+            
+            _currentPage = value;
+            OnPropertyChanged();
+            LoadMovies();
+        }
+    }
+
+    public int TotalPages
+    {
+        get => _totalPages;
+        private set
+        {
+            _totalPages = value;
+            OnPropertyChanged();
+        }
+    }
+
+    public void NextPage() => CurrentPage++;
+    public void PreviousPage() => CurrentPage--;
+
+    private void LoadMovies()
+    {
+        var totalCount = _movieService.GetTotalCount();
+        TotalPages = (int)Math.Ceiling((double)totalCount / PageSize);
+        Movies = _movieService.GetMovies(CurrentPage, PageSize).ToList();
     }
 }

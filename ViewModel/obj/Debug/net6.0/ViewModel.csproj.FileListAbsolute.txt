@@ -13,3 +13,4 @@ C:\Users\Artem\Desktop\AvaloniaApplication3\ViewModel\obj\Debug\net6.0\ViewModel
 C:\Users\Artem\Desktop\AvaloniaApplication3\ViewModel\obj\Debug\net6.0\refint\ViewModel.dll
 C:\Users\Artem\Desktop\AvaloniaApplication3\ViewModel\obj\Debug\net6.0\ViewModel.pdb
 C:\Users\Artem\Desktop\AvaloniaApplication3\ViewModel\obj\Debug\net6.0\ref\ViewModel.dll
+C:\Users\Artem\Desktop\AvaloniaApplication3\ViewModel\obj\Debug\net6.0\ViewModel.sourcelink.json
